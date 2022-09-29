@@ -1,4 +1,4 @@
-package com.cyphertek;
+package com.cyphertek.repository;
 
 import com.cyphertek.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -2,7 +2,6 @@ package com.cyphertek.service.transformer;
 
 import com.cyphertek.entity.User;
 import com.cyphertek.service.dto.UserDTO;
-import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
