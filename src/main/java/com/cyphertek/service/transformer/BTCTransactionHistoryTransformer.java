@@ -14,6 +14,10 @@ public class BTCTransactionHistoryTransformer extends Transformer<BTCTransaction
 
     public static BTCTransactionHistoryDTO convertToDTO(BTCTransactionHistory btcTransactionHistory) {
         BTCTransactionHistoryDTO btcTransactionHistoryDTO = new BTCTransactionHistoryDTO();
+        btcTransactionHistoryDTO.setUuid(btcTransactionHistory.getUuid());
+        btcTransactionHistoryDTO.setBtcTransactionType(btcTransactionHistory.getBtcTransactionType().name());
+        btcTransactionHistoryDTO.setCoins(btcTransactionHistory.getCoins());
+        btcTransactionHistoryDTO.setPrice(btcTransactionHistory.getPrice());
         return btcTransactionHistoryDTO;
     }
 
