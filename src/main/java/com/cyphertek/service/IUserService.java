@@ -13,4 +13,6 @@ public interface IUserService {
     ServiceResponse<Void> deleteUser(String userId);
 
     void syncUserWalletBalance(User user, BigDecimal transactionAmount);
+
+    void syncUserWalletBalanceAndBTCBalance(User user, BigDecimal transactionAmount, BigDecimal coins);
 }

@@ -57,4 +57,11 @@ public class UserServiceImpl implements IUserService {
         user.setWalletBalance(user.getWalletBalance().add(transactionAmount));
         userRepository.save(user);
     }
+
+    @Override
+    public void syncUserWalletBalanceAndBTCBalance(User user, BigDecimal transactionAmount, BigDecimal coins) {
+        user.setWalletBalance(user.getWalletBalance().add(transactionAmount));
+        user.setBtcBalance(user.getBtcBalance().add(coins));
+        userRepository.save(user);
+    }
 }
