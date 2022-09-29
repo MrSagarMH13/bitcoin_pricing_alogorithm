@@ -19,10 +19,16 @@ public class User extends BaseEntity {
     @Column(name = "last_name", columnDefinition = "varchar(100)")
     private String lastName;
 
-    @Column(name = "email", nullable = false, columnDefinition = "varchar(255)")
+    @Column(name = "email", nullable = false, columnDefinition = "varchar(255) unique")
     private String email;
 
     @Column(name = "wallet_balance", nullable = false, columnDefinition = "decimal(10,2) default 0")
     private BigDecimal walletBalance;
+
+    @Column(name = "btc_balance", columnDefinition = "decimal(10,2) default 0")
+    private BigDecimal btcBalance;
+
+    @Column(name = "active", columnDefinition = "bit(1) default true")
+    private boolean active = true;
 
 }

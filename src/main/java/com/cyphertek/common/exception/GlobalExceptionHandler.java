@@ -22,7 +22,8 @@ import org.springframework.web.multipart.support.MissingServletRequestPartExcept
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-@ControllerAdvice
+// TODO: Need to implement the logic. Will try to do if time permits
+//@ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override

@@ -25,7 +25,7 @@ public class BaseEntity {
     }
 
     @Id
-    @Column(name = "uuid", columnDefinition = "binary(16)")
+    @Column(name = "uuid", columnDefinition = "binary(36)")
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
             name = "UUID",
